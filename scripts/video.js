@@ -7,3 +7,7 @@ let append = (data) => {
     document.querySelector('#vidName').innerText = data.snippet.title
 }
 append(data)
+
+let home = () => {
+    window.location.href = 'index.html'
+}
