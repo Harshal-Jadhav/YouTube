@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MY YOUTUBE HOME</title>
+    <title>video</title>
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,1,0" />
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/video.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
                 menu
             </span>
         </div>
-        <div id="logo" onclick="home()">
+        <div id="logo">
             <img src="https://www.trustedreviews.com/wp-content/uploads/sites/54/2022/01/youtube_logo_dark-920x460.jpg"
                 alt="">
         </div>
@@ -50,49 +50,24 @@
 
         </div>
     </div>
+    <div id="display">
+        <div id="playArea">
+            <iframe width="650" height="375" src=""
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+            </iframe>
+            <div>
+                <p id="vidName">jdsflkjdfkjasdlkfjdfklj</p>
+            </div>
+        </div>
+        <div id="related"></div>
+    </div>
     <!-- Navbar Section Start -->
 
-    <!-- Menu Section Start -->
-    <div id="menu">
-        <div>
-            <span class="material-symbols-outlined">
-                home
-            </span>
-            <span>Home</span>
-        </div>
-        <div>
-            <span class="material-symbols-outlined">
-                explore
-            </span>
-            <span>Explore</span>
-        </div>
-        <div>
-            <span class="material-symbols-outlined">
-                subscriptions
-            </span>
-            <span>Subscriptions</span>
-        </div>
-        <div>
-            <span class="material-symbols-outlined">
-                video_library
-            </span>
-            <span>
-                Library
-            </span>
-        </div>
-    </div>
-    <!-- Menu Section End -->
 
-    <!-- Display Section Start -->
-    <!-- filter Section start -->
-    <div>
-        <input type="text" name="filter" id="filter" placeholder="Filter by channel">
-        <button id="fltBtn">Filter</button>
-    </div>
-    <div id="display"></div>
-    <!-- filter Section End -->
-    <!-- Display Sectin End -->
 </body>
 
 </html>
-<script src="./scripts/index.js"></script>
+
+<script src="./scripts/video.js"></script>

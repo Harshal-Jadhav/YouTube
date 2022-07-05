@@ -1,41 +1,12 @@
 * {
     font-family: sans-serif;
-    background-color: black;
     color: white;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
-#menu {
-    /* border: 1px solid; */
-    width: 65px;
-    height: 100vh;
-    position: fixed;
-    /* z-index: 100; */
-    border-right: 1px solid rgb(40, 36, 36);
-}
-
-#menu>div {
-    /* border: 1px solid; */
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
-    margin-top: 12px;
-}
-
-#menu>div {
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-
-#menu>div:not(:first-child) {
-    margin-top: 42px;
-}
-
-#menu>div>span:nth-child(2) {
-    font-size: 10px;
+body{
+    background-color: #181818;
 }
 
 #navbar {
@@ -51,6 +22,7 @@
     position: sticky;
     top: 0px;
     width: 100%;
+    background-color: black;
 }
 
 #navbar>div {
@@ -63,7 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: none;
+    /* border: none;     */
 }
 
 #logo>img {
@@ -119,60 +91,21 @@
     cursor: pointer;
 }
 
-#display {
-    /* border: 1px solid; */
-    width: 94.9%;
-    margin-left: 65px;
-    /* height: 50vh; */
-    padding: 10px;
+#display{
+    margin: 25px 0px 0px 100px;
+    /* border: 1px solid red; */
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(2,1fr);
+    
 }
-.card{
-    cursor: pointer;
+#playArea{
+    /* border: 1px solid; */
+    width: fit-content;
+    height: fit-content;
 }
-
-.card>img {
-    width: 100%;
-    height: 150px;
-}
-
-.card>p {
-    padding-left: 12px;
-
-}
-
-.card>p:nth-child(2) {
-    height: 60px;
-    max-height: 60px;
-    overflow: hidden;
-}
-
-.card>p:nth-child(3) {
-    font-size: 14px;
-    margin: 8px 0px;
-}
-
-.card>p:last-child {
-    font-size: 11px;
-}
-
-#filter{
-    color: white;
-    margin-left: 75px;
-    height: 35px;
-    border: 1px solid;
-    border-radius: 8px;
-    padding-left: 15px ;
-}
-#filter:focus{
-    outline: none;
-}
-#fltBtn{
-    background-color: #313131;
-    padding: 10px;
-    border-radius: 8px;
-    cursor: pointer;
+#playArea>div>p{
+    margin-top: 16px;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 10px;
 }
